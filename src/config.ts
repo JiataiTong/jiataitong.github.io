@@ -3,6 +3,6 @@
 
 export const SITE_TITLE = "Jiatai Tong | Personal Site";
 export const SITE_DESCRIPTION =
-  "This is Jiatai Tong's Personal Site";
+  "This is Jiatai Tong's Personal Site! ";
 export const GENERATE_SLUG_FROM_TITLE = true;
 export const TRANSITION_API = true;
