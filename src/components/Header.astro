@@ -1,3 +1,12 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import type { Lang } from "@i18n/ui";
+
+const locale = (Astro.currentLocale ?? "en") as Lang;
+const homeHref = getRelativeLocaleUrl(locale, "");
+---
+
 <div
   class="sticky top-0 z-30 flex h-16 w-full justify-center bg-base-100 bg-opacity-90 text-base-content shadow-sm backdrop-blur transition-all duration-100 lg:hidden"
 >
@@ -18,9 +27,10 @@
       </label>
     </div>
     <div class="navbar-center">
-      <a class="btn btn-ghost text-xl normal-case" href="/">Manuel Ernesto ⚡️</a
-      >
+      <a class="btn btn-ghost text-xl normal-case" href="/">Jiatai Tong</a>
     </div>
-    <div class="navbar-end"></div>
+    <div class="navbar-end">
+      <LanguageSwitcher />
+    </div>
   </div>
 </div>

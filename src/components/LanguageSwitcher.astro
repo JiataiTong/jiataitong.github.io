@@ -1,0 +1,22 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { LANGUAGES, type Lang } from "@i18n/ui";
+
+const current = (Astro.currentLocale ?? "en") as Lang;
+const other: Lang = current === "en" ? "zh" : "en";
+
+const segments = Astro.url.pathname.split("/").filter(Boolean);
+const rest = segments.slice(1).join("/");
+
+const otherHref = getRelativeLocaleUrl(other, rest);
+const label = LANGUAGES[other];
+---
+
+<a
+    class="btn btn-ghost btn-sm"
+    href={otherHref}
+    hreflang={other}
+    rel="alternate"
+>
+    {label}
+</a>
