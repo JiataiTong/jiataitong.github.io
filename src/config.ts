@@ -6,3 +6,5 @@ export const SITE_DESCRIPTION =
   "This is Jiatai Tong's Personal Site! ";
 export const GENERATE_SLUG_FROM_TITLE = true;
 export const TRANSITION_API = true;
+
+export const SITE_LAUNCHED = false;

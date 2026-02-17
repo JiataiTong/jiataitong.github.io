@@ -1,0 +1,46 @@
+---
+import LanguageSwitcher from "@components/LanguageSwitcher.astro";
+import type { Lang } from "@i18n/ui";
+
+const locale = (Astro.currentLocale ?? "en") as Lang;
+
+const email = "jiataitong2026@u.northwestern.edu";
+
+const COPY = {
+    en: {
+        title: "Coming soon",
+        subtitle:
+            "I'm building this website right now. In the meantime, you can reach me at:",
+        cta: "Email me",
+        note: "Thanks for visiting!",
+    },
+    zh: {
+        title: "网站建设中",
+        subtitle: "我正在搭建个人主页。期间可以通过以下方式联系我：",
+        cta: "发送邮件",
+        note: "感谢访问！",
+    },
+} as const;
+
+const c = COPY[locale];
+---
+
+<section class="flex min-h-[70vh] items-center justify-center px-4">
+    <div class="card w-full max-w-xl bg-base-100 shadow">
+        <div class="card-body">
+            <div class="flex items-start justify-between gap-4">
+                <h1 class="text-3xl font-bold">{c.title}</h1>
+                <LanguageSwitcher />
+            </div>
+
+            <p class="mt-2 opacity-80">{c.subtitle}</p>
+
+            <div class="mt-4 flex flex-wrap items-center gap-2">
+                <a class="btn btn-primary" href={`mailto:${email}`}>{c.cta}</a>
+                <span class="opacity-70">{email}</span>
+            </div>
+
+            <p class="mt-6 text-sm opacity-70">{c.note}</p>
+        </div>
+    </div>
+</section>

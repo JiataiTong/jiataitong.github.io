@@ -15,6 +15,11 @@ const {
   sideBarActiveItemID,
   ogType,
 } = Astro.props;
+
+import ComingSoon from "@components/ComingSoon.astro";
+import { SITE_LAUNCHED } from "../config";
+
+const SHOW_COMING_SOON = import.meta.env.PROD && !SITE_LAUNCHED;
 ---
 
 <!doctype html>
@@ -36,7 +41,7 @@ const {
         <Header title={SITE_TITLE} />
         <div class="md:flex md:justify-center">
           <main class="max-w-[100vw] p-6 pt-10 lg:max-w-[900px]">
-            <slot />
+            {SHOW_COMING_SOON ? <ComingSoon /> : <slot />}
           </main>
         </div>
         <Footer />
