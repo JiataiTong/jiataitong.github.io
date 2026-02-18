@@ -1,0 +1,76 @@
+- id: senior-design-gui-app-for-mach-effect-research
+  name:
+    en: 'Senior Design: GUI app for Mach Effect Research'
+    zh: ''
+  summary:
+    en: Built a Raspberry Pi APP based on PyQt library.
+    zh: ''
+  role:
+    en: Developer
+    zh: ''
+  org:
+    en: Bucknell University
+    zh: ''
+  location:
+    en: PA
+    zh: ''
+  start: '2023-08-01'
+  end: '2023-12-01'
+  highlights:
+  - en: Designed and implemented real-time plotting and display functionalities using Python, facilitating more efficient data analysis for Mach Effect research.
+    zh: ''
+  links: {}
+  tech: []
+  featured: false
+- id: course-projects-in-biometrics-a-facial-recognition-based-att
+  name:
+    en: 'Course Projects in Biometrics: a Facial Recognition Based Attendance System & Code Reproduction of a Voice Authentication System Against DeepFake Voice Data'
+    zh: ''
+  summary:
+    en: Implemented OpenCV library to extract facial information from video streams effectively.
+    zh: ''
+  role:
+    en: Team Leader
+    zh: ''
+  org:
+    en: Bucknell University
+    zh: ''
+  location:
+    en: PA
+    zh: ''
+  start: '2023-01-01'
+  end: '2023-05-01'
+  highlights:
+  - en: Utilized a pre-trained face-recognition model to overcome the challenge of limited training data.
+    zh: ''
+  - en: Developed an ensemble strategy for updating facial features without modifying the core model.
+    zh: ''
+  - en: Preprocessed voice signals into spectrograms and trained a Temporal Convolution Network as a classifier.
+    zh: ''
+  links: {}
+  tech: []
+  featured: false
+- id: tongchuang-an-online-community-startup-project
+  name:
+    en: 'TongChuang: An online community startup project'
+    zh: ''
+  summary:
+    en: TongChuang is an online community project designed to provide social connections for individual graduated students in different fields during the COVID-19 pandemic.
+    zh: ''
+  role:
+    en: Team leader
+    zh: ''
+  org:
+    en: Beijing
+    zh: ''
+  location:
+    en: China
+    zh: ''
+  start: '2020-11-01'
+  end: '2021-04-01'
+  highlights:
+  - en: Ran market research on potential rival companies and customers.
+    zh: ''
+  links: {}
+  tech: []
+  featured: false

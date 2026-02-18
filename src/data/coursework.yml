@@ -1,0 +1,20 @@
+- 'id': 'master-s-courses'
+  'label':
+    'en': 'Master''s Courses'
+    'zh': '硕士课程'
+  'items':
+  - 'en': 'Graduate Algorithms, logic in AI, Machine Learning, Intro to AI (Fall 2024).'
+    'zh': '研究生算法、AI 逻辑、机器学习、人工智能导论（2024 年秋季）。'
+  - 'en': 'Linear Optimization, Theory of Gradient-Based Optimization, Massive Parallel Programming (Winter 2025).'
+    'zh': '线性优化、基于梯度的优化理论、大规模并行编程（2025 年冬季）。'
+  - 'en': 'Deep Learning, Qualitative Reasoning (Spring 2025).'
+    'zh': '深度学习、定性推理（2025 年春季）。'
+  - 'en': 'Deep Learning for Natural Language Processing (Fall 2026).'
+    'zh': '自然语言处理深度学习（2026 年秋季）。'
+- 'id': 'undergraduate-courses'
+  'label':
+    'en': 'Undergraduate Courses'
+    'zh': '本科课程'
+  'items':
+  - 'en': 'Related Advanced Courses: Algorithms, Computational Theory, Distributed Computing (Theory), Biometrics.'
+    'zh': '相关高阶课程：算法、计算理论、分布式计算（理论）、生物识别。'

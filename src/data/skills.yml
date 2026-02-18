@@ -1,0 +1,37 @@
+- id: programming-languages
+  label:
+    en: Programming Languages
+    zh: ''
+  items:
+  - Python
+  - Java
+  - C
+  - C++
+  - Cuda
+  - Dart
+  - JavaScript
+  - TypeScript
+  - LaTeX
+- id: libraries-frameworks
+  label:
+    en: Libraries & Frameworks
+    zh: ''
+  items:
+  - Tensorflow
+  - Scikit-learn
+  - Pytorch (DDP)
+  - Torch Lightning
+  - Pandas
+  - Matplotlib
+  - Gurobi
+  - OpenCV
+- id: app-development
+  label:
+    en: App Development
+    zh: ''
+  items:
+  - Flutter
+  - React.JS
+  - Next.JS
+  - PyQt
+  - Astro

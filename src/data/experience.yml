@@ -1,0 +1,246 @@
+- 'id': 'brownie-ai-inc'
+  'category': 'entrepreneurship'
+  'title':
+    'en': 'President'
+    'zh': '主席'
+  'org':
+    'en': 'Brownie AI, Inc.'
+    'zh': 'Brownie AI, Inc.'
+  'location':
+    'en': 'Sacramento, U.S.'
+    'zh': '美国·萨克拉门托'
+  'start': '2023-05-01'
+  'end': '2024-05-01'
+  'bullets':
+  - 'en': 'Built a web application Applytailor.com, an automated tool that helps recent graduates customize their resumes
+      for specific job opportunities.'
+    'zh': '构建网页应用 Applytailor.com：自动化工具，帮助应届毕业生针对具体岗位定制简历。'
+  - 'en': 'Worked on prompt engineering to develop brainstorming features.'
+    'zh': '通过提示工程（Prompt Engineering）开发头脑风暴功能。'
+  - 'en': 'Collaboratively Constructed MVP with Next.js, Vercel, and Firebase.'
+    'zh': '与团队协作使用 Next.js、Vercel 与 Firebase 搭建 MVP。'
+  - 'en': 'Collaboratively implemented vectorization and cosine similarity techniques to enhance the resume tailoring process.'
+    'zh': '协作实现向量化与余弦相似度等技术，提升简历定制与匹配效果。'
+  - 'en': 'Interviewed by Y-Combinator on Jan 3rd, 2024.'
+    'zh': '2024 年 1 月 3 日接受 Y Combinator 面试。'
+- 'id': 'fengjia-management-consulting-co-ltd'
+  'category': 'entrepreneurship'
+  'title':
+    'en': 'Founder, Judicial Person, Shareholder'
+    'zh': '创始人 / 法定代表人 / 股东'
+  'org':
+    'en': 'FengJia Management Consulting Co.,Ltd.'
+    'zh': '峰嘉管理咨询有限公司'
+  'location':
+    'en': 'Beijing, China'
+    'zh': '中国·北京'
+  'start': '2019-01-01'
+  'end': null
+  'bullets':
+  - 'en': 'Fengjia is a management consulting company and the shareholder of FengHe Education.'
+    'zh': '峰嘉是一家管理咨询公司，同时为丰和教育的股东。'
+  - 'en': 'Providing detailed suggestions and reports on potential business customers, influencing decisions on partnerships
+      and profit-sharing arrangements for FengHe.'
+    'zh': '为潜在商务客户提供详尽建议与分析报告，影响丰和教育在合作与分润安排上的决策。'
+- 'id': 'fenghe-education-and-technology-co-ltd'
+  'category': 'entrepreneurship'
+  'title':
+    'en': 'Product Manager, Consultant'
+    'zh': '产品经理 / 顾问'
+  'org':
+    'en': 'FengHe Education and Technology Co.,Ltd.'
+    'zh': '峰和教育科技有限公司'
+  'location':
+    'en': 'Beijing, China'
+    'zh': '中国·北京'
+  'start': '2019-01-01'
+  'end': '2021-08-01'
+  'bullets':
+  - 'en': 'Fenghe Education is an online education school focusing on Chinese Accountant Qualification Certificate Exams:
+      gw.fhiedu.com (Chinese Webpage)'
+    'zh': '峰和教育为线上教育机构，专注于中国会计从业/资格证考试：gw.fhiedu.com'
+  - 'en': 'Developed a low-cost, low-risk marketing strategy that pivoted the company''s target audience from individual students
+      to partnerships with accounting associations and schools.'
+    'zh': '制定低成本、低风险的营销策略，将目标客群从个人学员转向与会计协会及学校的合作渠道。'
+  - 'en': 'Redesigned the brand according to the new marketing strategy: www.shenqimuti.cn (Chinese Webpage)'
+    'zh': '基于新营销策略完成品牌重塑：www.shenqimuti.cn'
+  - 'en': 'Contributed to the company''s success, with around 200 partnerships.'
+    'zh': '推动公司增长，建立约 200 个合作渠道。'
+- 'id': 'controlled-diffusion-generation-by-reinforcement-learning-re'
+  'category': 'research'
+  'title':
+    'en': 'Individual Research Supervised by V.S. Subrahmanian, Walter P. Murphy Professor of Computer Science'
+    'zh': '在V.S. Subrahmanian（Walter P. Murphy 计算机科学讲席教授）指导下的个人研究'
+  'project':
+    'en': 'Controlled Diffusion Generation by Reinforcement Learning: Responsible Music Generation and More'
+    'zh': 'Controlled Diffusion Generation by Reinforcement Learning: Responsible Music Generation and More'
+  'org':
+    'en': 'Northwestern University'
+    'zh': '西北大学 '
+  'location':
+    'en': 'IL'
+    'zh': '美国·伊利诺伊州'
+  'start': '2025-01-01'
+  'end': null
+  'bullets':
+  - 'en': 'Objective: Define and solve the Responsible Music Generation (RMG) problem—controlling diffusion-based music generators
+      to avoid copyright overlap with a restricted catalog while enabling safe style mimicry from a pre-defined dataset.'
+    'zh': '目标：定义并求解 Responsible Music Generation（RMG）问题——控制基于扩散的音乐生成器，避免与受限曲库产生版权重叠，同时允许在预定义数据集上进行安全的风格模仿。'
+  - 'en': 'Methods: Formulate Responsible Music Generation as reinforcement learning over diffusion models, online training
+      the policy through denoising diffusion policy optimization (DDPO), Group Relative Policy Optimization (GRPO), and designed
+      a novel pipeline to handle trajectory distribution skewed toward negative rewards SafeSampleGRPO to handle the specific
+      problem.'
+    'zh': '方法：将 RMG 表述为扩散模型上的强化学习，采用 DDPO（Denoising Diffusion Policy Optimization）与 GRPO（Group Relative Policy Optimization）进行在线训练；并为轨迹分布严重偏向负奖励的情形设计新流程
+      SafeSampleGRPO。'
+  - 'en': 'Refined and integrated MiRA from Sony AI (including KL divergence, coverID, Clap, and DEfNet) into the training
+      loop for reward formulation and post-hoc evaluation, and developed a pipeline testing the validity of the similarity
+      metrics in RMG tasks.'
+    'zh': '完善并集成 Sony AI 的 MiRA 指标体系（包括 KL divergence、coverID、CLAP、DEfNet）到训练环路，用于奖励构造与事后评估；同时搭建流程验证相似度指标在 RMG 任务中的有效性。'
+  - 'en': 'Designed the multi-objective reward to balance copyright dissimilarity, safe-style similarity, and audio quality.'
+    'zh': '设计多目标奖励函数，在版权不相似度、安全风格相似度与音频质量之间进行权衡。'
+  - 'en': 'Implemented DDPO and GRPO end-to-end as the online training baseline for RMG tasks.'
+    'zh': '端到端实现 DDPO 与 GRPO，作为 RMG 在线训练基线。'
+  - 'en': 'Proved the $\mathrm{KL}$-to-$L_2$ trust-region equivalence for diffusion models with scheduled noise covariance
+      and showed the TRPO objective can be reduced to the exponential $L_2$ ELBO, and proposed a surrogate objective function
+      to match the global optimum within the trust region.'
+    'zh': '证明在具有噪声协方差调度的扩散模型中，KL 约束与 $L_2$ trust region 等价；展示 TRPO 目标可化简为指数形式的 $L_2$ ELBO，并提出在 trust region 内匹配全局最优解的替代目标函数。'
+  - 'en': 'Showed that negative-clipping is necessary to handle the unreliability of negative samples, and positive-clipping
+      is not for PPO-style objectives with experiments on OCR image benchmarks, and designed a $\mathrm{KL}$ mask as a weak
+      $\mathrm{KL}$-regularization method.'
+    'zh': '通过 OCR 图像基准实验表明：为处理负样本不可靠性需要 negative-clipping，而 PPO 风格目标不需要 positive-clipping；并设计 $\mathrm{KL}$ mask 作为弱 $\mathrm{KL}$
+      正则化方法。'
+  - 'en': 'Proposed a pipeline SafeSampleGRPO to handle the trajectory distrubtion that massively skewed to negative reward
+      observed in RMG, which causes extremely unstable training in original DDPO and GRPO pipeline.'
+    'zh': '提出 SafeSampleGRPO 流水线以应对 RMG 中轨迹奖励分布大量偏向负值的问题（该问题会导致原始 DDPO/GRPO 训练极不稳定）。'
+  - 'en': 'Results: Both GRPO and SafeSampleGRPO increase the feasibility rate of generated samples from 80\% to 90\%, while
+      simultaneously improving the FAD score. Under a stricter setting (initial feasibility of 55\%), SafeSampleGRPO outperforms
+      GRPO. Because SafeSampleGRPO explicitly controls the proportion of negative samples, it achieves a feasibility rate
+      of 70\% while still maintaining improved FAD performance.'
+    'zh': '结果：GRPO 与 SafeSampleGRPO 均将生成样本的可行率从 80\% 提升至 90\%，同时改善 FAD。更严格设置下（初始可行率 55\%），SafeSampleGRPO 优于 GRPO；由于其显式控制负样本比例，可将可行率提升至
+      70\% 且仍保持更优 FAD。'
+- 'id': 'gradient-based-algorithms-for-optimization-over-relu-neural-'
+  'category': 'research'
+  'title':
+    'en': 'Leading Research Assistant Supervised by Sam Burer, Tippie Rollins Professor in the Department of Business Analytics
+      & Thiago Serra, Assistant Professor of Analytics & Operations Management'
+    'zh': '在Sam Burer（Tippie Rollins 商业分析讲席教授）与 Thiago Serra（分析与运营管理助理教授）指导下的主要研究助理'
+  'project':
+    'en': 'Gradient-based Algorithms for Optimization over ReLU Neural Networks'
+    'zh': 'Gradient-based Algorithms for Optimization over ReLU Neural Networks'
+  'org':
+    'en': 'University of Iowa'
+    'zh': '爱荷华大学'
+  'location':
+    'en': 'IA'
+    'zh': '美国·爱荷华州'
+  'start': '2024-01-01'
+  'end': null
+  'bullets':
+  - 'en': 'Objective: Improve the simplex-based walking algorithm on solving Mixed Integer Linear Programming task involving
+      ReLU Neural Networks by not solving the entire LP optimality for each step.'
+    'zh': '目标：改进 simplex-based walking 算法，用于求解含 ReLU 神经网络的混合整数线性规划（MILP）问题，通过避免每一步都完整求解 LP 最优性来提升效率。'
+  - 'en': 'Methods: Developed different strategies utilizing local first-order information'
+    'zh': '方法：提出多种利用局部一阶信息的策略。'
+  - 'en': 'Results: The final perturbed projected gradient ascent algorithm can scale up better in 100x larger networks than
+      the former walking algorithm, and outperform vanilla projected gradient ascent by escaping from local optimums via perturbation.
+      The linear region accelerated version is robust to a small learning rate and has very strong performance on deeper networks,
+      accepted by CPAIOR 2026.'
+    'zh': '结果：最终的扰动投影梯度上升（Perturbed Projected Gradient Ascent）相较原 walking 算法可扩展到 100× 更大网络，并通过扰动跳出局部最优，优于 vanilla 投影梯度上升；线性区域加速版本对小学习率更鲁棒，在更深网络上表现强劲，已被
+      CPAIOR 2026 接收。'
+  - 'en': 'Redesigned and implemented the interior point method (barrier method) to traverse over multiple linear regions
+      for optimality.'
+    'zh': '重新设计并实现内点法（barrier method），以跨越多个线性区域逼近最优解。'
+  - 'en': 'Proposed a gradient-only walking algorithm with the log-barrier penalty to solve the problem heuristically with
+      computational simplicity.'
+    'zh': '提出仅用梯度的 walking 算法，并引入对数障碍（log-barrier）惩罚，以较低计算复杂度进行启发式求解。'
+  - 'en': 'Proposed a perturbed accelerated projected gradient ascent algorithm to optimize over ReLU network.'
+    'zh': '提出扰动加速投影梯度上升算法，用于 ReLU 网络上的优化。'
+  - 'en': 'Designed a linear region recognition mechanism to skip small steps in gradient ascent.'
+    'zh': '设计线性区域识别机制，以跳过梯度上升中的微小步长。'
+  - 'en': 'Designed a step size trimming strategy utilizing partial information of the neural networks, avoiding large gradient
+      steps to a very different linear region to improve the stability.'
+    'zh': '设计步长裁剪（step size trimming）策略，利用神经网络的部分结构信息避免一次大步跨入差异过大的线性区域，从而提升稳定性。'
+- 'id': 'optimizing-over-relu-networks-with-pruned-sparse-networks'
+  'category': 'research'
+  'title':
+    'en': 'Research Assistant Supervised by Thiago Serra, Assistant Professor of Business Analytics'
+    'zh': '在Thiago Serra（商业分析助理教授）指导下的研究助理'
+  'project':
+    'en': 'Optimizing Over ReLU Networks with Pruned Sparse Networks'
+    'zh': 'Optimizing Over ReLU Networks with Pruned Sparse Networks'
+  'org':
+    'en': 'University of Iowa'
+    'zh': '爱荷华大学 '
+  'location':
+    'en': 'IA'
+    'zh': '美国·爱荷华州'
+  'start': '2024-07-01'
+  'end': '2024-09-01'
+  'bullets':
+  - 'en': 'Objective: Take advantage of the computational simplicity of the mixed integer linear programming(MILP) formulation
+      of the sparse network as a warm start to solve MILP tasks involving a large dense ReLU network.'
+    'zh': '目标：利用稀疏网络的 MILP 形式在计算上的简洁性，作为 warm start 来求解涉及大规模稠密 ReLU 网络的 MILP 任务。'
+  - 'en': 'Methods: Fine-tuned a randomly pruned sparse network based on the original dataset and the dense network to mimic
+      the behavior of the original Network. Implemented MILP solver to solve this surrogate problem as a warm start close
+      to the optimal solution to the original problem.'
+    'zh': '方法：基于原始数据集与稠密网络，对随机剪枝得到的稀疏网络进行微调，使其行为逼近原模型；并用 MILP 求解该替代问题，得到接近原问题最优解的 warm start。'
+  - 'en': 'Proposed a strategy to fine-tune the pruned network, aligning it with the original model.'
+    'zh': '提出剪枝网络的微调策略，使其与原模型对齐。'
+- 'id': 'simplex-based-walking-algorithm-for-optimization-over-relu-n'
+  'category': 'research'
+  'title':
+    'en': 'Leading Research Assistant Supervised by Thiago Serra, Assistant Professor of Analytics & Operations Management'
+    'zh': '在Thiago Serra（商业分析助理教授）指导下的主要研究助理'
+  'project':
+    'en': 'Simplex-based Walking Algorithm for Optimization over ReLU Neural Networks'
+    'zh': 'Simplex-based Walking Algorithm for Optimization over ReLU Neural Networks'
+  'org':
+    'en': 'Bucknell University'
+    'zh': '巴克内尔大学'
+  'location':
+    'en': 'PA'
+    'zh': '美国·宾夕法尼亚州'
+  'start': '2023-06-01'
+  'end': '2023-12-01'
+  'bullets':
+  - 'en': 'Objective: Develop a heuristic walking algorithm to solve mixed integer linear programming(MILP) tasks involving
+      trained ReLU networks.'
+    'zh': '目标：开发启发式 walking 算法，用于求解含已训练 ReLU 网络的混合整数线性规划（MILP）任务。'
+  - 'en': 'Methods: Reformulated the MILP problem into a series of LP problems, taking advantage of the mathematical piecewise
+      structure of the ReLU activation to simplify the optimization process.'
+    'zh': '方法：利用 ReLU 激活的分段线性结构，将 MILP 重构为一系列 LP 子问题以简化优化过程。'
+  - 'en': 'Results: Developed a simplex-based walking heuristic algorithm with improved time complexity compared to existing
+      MILP-based heuristic algorithms, effectively finding heuristic solutions over neural networks 10x larger than those
+      manageable by MILP solvers like Gurobi, accepted by CPAIOR 2024.'
+    'zh': '结果：提出 simplex-based walking 启发式算法，相比现有 MILP 启发式在时间复杂度上更优，可在比 Gurobi 等 MILP 求解器可直接处理规模大 10× 的神经网络上有效求得启发式解，已被 CPAIOR
+      2024 接收。'
+  - 'en': 'Actively worked on integrating the walking method into Gurobi''s callback function to expedite the exact solution
+      discovery process.'
+    'zh': '积极推进将 walking 方法集成到 Gurobi 的 callback 机制中，加速精确解的发现过程。'
+  - 'en': 'Rebuilt the code of JANOS for benchmark experiments.'
+    'zh': '重构 JANOS 代码用于基准实验。'
+  - 'en': 'Designed ablation experiments for different mechanisms of the proposed algorithm.'
+    'zh': '为所提算法的不同机制设计消融实验。'
+- 'id': 'lower-bound-of-k-out-of-order-relaxed-queues-in-semi-synchro'
+  'category': 'research'
+  'title':
+    'en': 'Individual Study Mentored by Edward Talmage, Assistant Professor of Computer Science'
+    'zh': '在Edward Talmage（计算机科学助理教授）指导下的个人研究'
+  'project':
+    'en': 'Lower Bound of k-Out-of-Order Relaxed Queues in Semi-synchronous Message Passing Systems'
+    'zh': 'Lower Bound of k-Out-of-Order Relaxed Queues in Semi-synchronous Message Passing Systems'
+  'org':
+    'en': 'Bucknell University'
+    'zh': '巴克内尔大学 '
+  'location':
+    'en': 'PA'
+    'zh': '美国·宾夕法尼亚州'
+  'start': '2023-09-01'
+  'end': '2023-12-01'
+  'bullets':
+  - 'en': 'Objective: Find a theoretical lower bound for the dequeue method of k-out-of-order relaxed queues in semi-synchronous
+      message-passing systems.'
+    'zh': '目标：在半同步消息传递系统中，为 k-out-of-order relaxed queue 的 dequeue 操作推导理论下界。'
+  - 'en': 'Result: Developed theoretical proofs for a tighter worst-case lower bound, clarifying the trade-off between lower
+      bounds for enqueue and dequeue operations. Designed a fast dequeue algorithm that takes advantage of the k-relaxation.'
+    'zh': '结果：给出更紧的最坏情形下界证明，阐明 enqueue 与 dequeue 下界之间的权衡；并设计利用 k-relaxation 的快速 dequeue 算法。'

@@ -32,11 +32,12 @@ const SHOW_COMING_SOON = import.meta.env.PROD && !SITE_LAUNCHED;
                 />
               ) : (
                 <Image
-                  class="mask mask-circle"
-                  format="webp"
+                  class="mask mask-circle object-contain"
+                  style="object-position: center top;"
+                  format="png"
                   width={300}
                   height={300}
-                  src="/profile.webp"
+                  src="/profile_3.png"
                   alt="Profile image"
                 />
               )

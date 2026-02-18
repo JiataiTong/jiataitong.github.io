@@ -1,0 +1,38 @@
+- 'id': 'northwestern-university-master-of-science-in-computer-scienc'
+  'degree':
+    'en': 'Master of Science in Computer Science, GPA: 4.0'
+    'zh': '计算机科学理学硕士，GPA：4.0'
+  'school':
+    'en': 'Northwestern University'
+    'zh': '西北大学'
+  'location':
+    'en': 'Evanston, IL'
+    'zh': '伊利诺伊州埃文斯顿'
+  'periods':
+  - 'start': '2024-09-01'
+    'end': '2025-12-01'
+  'details':
+  - 'en': 'Concentration in Machine Learning'
+    'zh': '机器学习方向'
+- 'id': 'bucknell-university-bachelor-of-science-in-computer-science'
+  'degree':
+    'en': 'Bachelor of Science in Computer Science, GPA: 3.83'
+    'zh': '计算机科学理学学士，GPA：3.83'
+  'school':
+    'en': 'Bucknell University'
+    'zh': '巴克内尔大学'
+  'location':
+    'en': 'Lewisburg, PA'
+    'zh': '宾夕法尼亚州刘易斯堡'
+  'periods':
+  - 'start': '2016-08-01'
+    'end': '2018-05-01'
+  - 'start': '2022-08-01'
+    'end': '2023-12-01'
+  'details':
+  - 'en': 'Minor in Mathematics,'
+    'zh': '数学辅修'
+  - 'en': 'Minor in Philosophy.'
+    'zh': '哲学辅修。'
+  - 'en': 'Gap due to entrepreneurship and COVID-19.'
+    'zh': '因创业及新冠疫情导致的间隔期。'
