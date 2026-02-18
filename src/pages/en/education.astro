@@ -1,8 +1,15 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import EducationList from "@components/EducationList.astro";
+import { getCollection } from "astro:content";
+import type { Lang } from "@i18n/ui";
+
+const locale = (Astro.currentLocale ?? "en") as Lang;
+const education = await getCollection("education");
+const coursework = await getCollection("coursework");
 ---
 
-<BaseLayout title="Research">
-    <h1 class="text-3xl font-bold">Research</h1>
-    <p class="mt-4 opacity-80">Content coming soon.</p>
+<BaseLayout title="Education">
+    <h1 class="mb-6 text-3xl font-bold">Education</h1>
+    <EducationList items={education} coursework={coursework} locale={locale} />
 </BaseLayout>

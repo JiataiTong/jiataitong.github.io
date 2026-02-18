@@ -1,0 +1,101 @@
+---
+import type { Lang } from "@i18n/ui";
+import { pickLang } from "@lib/i18nContent";
+
+const { items, coursework, locale } = Astro.props as {
+    items: any[];
+    coursework: any[];
+    locale: Lang;
+};
+
+function fmtPeriod(p: { start: string; end: string }) {
+    // simple display;
+    return `${p.start} — ${p.end}`;
+}
+
+const courseworkByEduId = new Map<string, any[]>();
+for (const c of coursework ?? []) {
+    const eduId = c.data.educationId;
+    courseworkByEduId.set(eduId, [...(courseworkByEduId.get(eduId) ?? []), c]);
+}
+---
+
+<div class="space-y-4">
+    {
+        items.map((e) => {
+            // find groups for this school
+            const groups = courseworkByEduId.get(e.data.id) ?? [];
+
+            return (
+                <div class="card bg-base-100 shadow">
+                    <div class="card-body">
+                        <div class="flex items-start gap-4">
+                            {e.data.logo ? (
+                                <div class="w-20 shrink-0">
+                                    <img
+                                        src={e.data.logo}
+                                        alt={`${pickLang(e.data.school, locale)} logo`}
+                                        class="h-20 w-20 object-contain"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            ) : null}
+
+                            <div class="flex-1">
+                                <h3 class="card-title">
+                                    {pickLang(e.data.school, locale)}
+                                </h3>
+                                <div class="font-medium">
+                                    {pickLang(e.data.degree, locale)}
+                                </div>
+
+                                {e.data.location && (
+                                    <div class="text-sm opacity-80">
+                                        {pickLang(e.data.location, locale)}
+                                    </div>
+                                )}
+
+                                <div class="text-sm opacity-70">
+                                    {e.data.periods.map(fmtPeriod).join(" · ")}
+                                </div>
+
+                                {e.data.details?.length ? (
+                                    <ul class="mt-2 list-disc pl-5">
+                                        {e.data.details.map((d) => (
+                                            <li>{pickLang(d, locale)}</li>
+                                        ))}
+                                    </ul>
+                                ) : null}
+
+                                {groups.length ? (
+                                    <div class="mt-3 space-y-2">
+                                        {groups.map((g) => (
+                                            <div>
+                                                <div class="text-sm font-semibold opacity-90">
+                                                    {pickLang(
+                                                        g.data.label,
+                                                        locale,
+                                                    )}
+                                                </div>
+                                                <ul class="mt-1 list-disc pl-5">
+                                                    {g.data.items.map((it) => (
+                                                        <li>
+                                                            {pickLang(
+                                                                it,
+                                                                locale,
+                                                            )}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : null}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        })
+    }
+</div>

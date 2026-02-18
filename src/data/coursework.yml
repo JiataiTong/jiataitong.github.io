@@ -1,4 +1,5 @@
 - 'id': 'master-s-courses'
+  'educationId': 'northwestern-university-master-of-science-in-computer-science'
   'label':
     'en': 'Master''s Courses'
     'zh': '硕士课程'
@@ -12,6 +13,7 @@
   - 'en': 'Deep Learning for Natural Language Processing (Fall 2026).'
     'zh': '自然语言处理深度学习（2026 年秋季）。'
 - 'id': 'undergraduate-courses'
+  'educationId': 'bucknell-university-bachelor-of-science-in-computer-science'
   'label':
     'en': 'Undergraduate Courses'
     'zh': '本科课程'

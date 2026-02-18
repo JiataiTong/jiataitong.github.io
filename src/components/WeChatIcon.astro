@@ -1,0 +1,120 @@
+---
+const { wechatId, size = 24, label = "WeChat" } = Astro.props;
+---
+
+<button
+    type="button"
+    class="wechat-btn"
+    aria-label={`${label}: ${wechatId}. Click to copy.`}
+    data-wechat-id={wechatId}
+    data-default-text={`WeChat: ${wechatId} (click to copy)`}
+>
+    <!-- Icon -->
+    <span class="icon" aria-hidden="true">
+        <!-- Use your WeChat SVG inline if possible; <img> also works -->
+        <img src="/icons/wechat.svg" width={size} height={size} alt="" />
+    </span>
+
+    <!-- Tooltip text (hover/focus) -->
+    <span class="tooltip" role="tooltip">
+        WeChat: {wechatId} (click to copy)
+    </span>
+
+    <!-- Screen-reader announcement -->
+    <span class="sr-only" aria-live="polite"></span>
+</button>
+
+<style>
+    .wechat-btn {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+        line-height: 0;
+    }
+
+    .icon :global(img),
+    .icon :global(svg) {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: contain;
+    }
+
+    .tooltip {
+        position: absolute;
+        left: 50%;
+        top: calc(100% + 8px);
+        transform: translateX(-50%);
+        white-space: nowrap;
+
+        padding: 6px 8px;
+        border-radius: 8px;
+        font-size: 12px;
+        background: rgba(0, 0, 0, 0.85);
+        color: white;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 120ms ease;
+    }
+
+    /* show on hover or keyboard focus */
+    .wechat-btn:hover .tooltip,
+    .wechat-btn:focus-visible .tooltip {
+        opacity: 1;
+    }
+
+    /* a11y helper */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+</style>
+
+<script is:inline>
+    document.addEventListener("click", async (e) => {
+        const btn = e.target?.closest?.("button.wechat-btn");
+        if (!btn) return;
+
+        const id = btn.dataset.wechatId;
+        if (!id) return;
+
+        const tooltip = btn.querySelector(".tooltip");
+        const sr = btn.querySelector(".sr-only");
+        const defaultText = btn.dataset.defaultText || "";
+
+        const showCopied = () => {
+            if (tooltip) tooltip.textContent = "Copied!";
+            if (sr) sr.textContent = `Copied WeChat ID: ${id}`;
+            // restore tooltip
+            window.setTimeout(() => {
+                if (tooltip)
+                    tooltip.textContent =
+                        defaultText || `WeChat: ${id} (click to copy)`;
+            }, 1200);
+        };
+
+        try {
+            await navigator.clipboard.writeText(id);
+            showCopied();
+        } catch {
+            // fallback if clipboard blocked
+            window.prompt("Copy WeChat ID:", id);
+        }
+    });
+</script>
